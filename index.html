@@ -3,242 +3,243 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>~*~ WELCOME</title>
-    <style>
-      @keyframes rotate {
-        0% {
-          transform: rotate(0deg);
-        }
-        50% {
-          transform: rotate(180deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      }
-
-      @keyframes painfullySlowFade {
-        0% {
-          opacity: 0;
-          background-color: #ff00ff;
-        }
-        25% {
-          opacity: 1;
-          background-color: #00ffff;
-        }
-        50% {
-          opacity: 0.1;
-          background-color: #ffff00;
-        }
-        75% {
-          opacity: 0.9;
-          background-color: #00ff00;
-        }
-        100% {
-          opacity: 0;
-          background-color: #ff00ff;
-        }
-      }
-
-      @keyframes pulse {
-        0% {
-          font-size: 16px;
-          color: red;
-          letter-spacing: -2px;
-        }
-        50% {
-          font-size: 52px;
-          color: lime;
-          text-shadow: 10px 10px 5px blue;
-          letter-spacing: 15px;
-        }
-        100% {
-          font-size: 16px;
-          color: red;
-          letter-spacing: -2px;
-        }
-      }
-
-      @keyframes slide {
-        0% {
-          transform: translateX(-100%);
-        }
-        100% {
-          transform: translateX(100%);
-        }
-      }
-
-      body {
-        background-color: #ff00ff;
-        background-image: radial-gradient(#00ff00 20%, #0000ff 20%);
-        background-size: 40px 40px;
-        font-family: "Comic Sans MS", "Papyrus", "Chalkduster", cursive;
-        color: #ffff00;
-        cursor:
-          url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text y="24" font-size="24">🥁</text></svg>'),
-          auto;
-        margin: 0;
-        padding: 10px;
-      }
-
-      .slow-spinner {
-        animation: rotate 50s infinite linear;
-        display: inline-block;
-        border: 15px dashed #ff0000;
-        padding: 20px;
-        background: #00ffff;
-        color: #000000;
-      }
-
-      .glacial-text {
-        animation: pulse 40s infinite ease-in-out;
-        font-family: "Impact", fantasy;
-      }
-
-      .background-fader {
-        animation: painfullySlowFade 70s infinite ease-in-out;
-        border: 10px ridge #ff9900;
-        padding: 15px;
-        margin: 20px 0;
-      }
-
-      .marquee-container {
-        overflow: hidden;
-        background: #000000;
-        border: 4px dotted #ff00ff;
-      }
-
-      .marquee-slow {
-        animation: slide 60s linear infinite;
-        white-space: nowrap;
-        font-size: 24px;
-        color: #ffffff;
-        padding: 5px 0;
-      }
-
-      table {
-        border: 8px groove #00ff00;
-        background-color: #800080;
-        width: 100%;
-        text-align: center;
-      }
-
-      th {
-        background-color: #000000;
-        color: #00ff00;
-        font-size: 20px;
-        padding: 11px;
-      }
-
-      td {
-        border: 5px dotted #ffff00;
-        padding: 15px;
-        font-family: "Times New Roman", serif;
-        font-size: 18px;
-      }
-
-      .blink {
-        animation: blinker 2s step-start infinite;
-        color: #ff0000;
-        font-weight: bold;
-        font-size: 28px;
-      }
-
-      @keyframes blinker {
-        50% {
-          opacity: 0;
-        }
-      }
-
-      .hit-counter {
-        font-family: "Courier New", monospace;
-        background: #000000;
-        color: #00ff00;
-        padding: 10px;
-        border: 3px inset #ffffff;
-        display: inline-block;
-        font-size: 20px;
-      }
-
-      button {
-        background: linear-gradient(
-          to right,
-          red,
-          orange,
-          yellow,
-          green,
-          blue,
-          indigo,
-          violet
-        );
-        color: white;
-        font-size: 22px;
-        font-family: "Comic Sans MS";
-        border: 6px outset #00ffff;
-        cursor: pointer;
-        padding: 10px;
-      }
-
-      button:hover {
-        transform: scale(1.2) rotate(5deg);
-        transition: transform 15s ease-in-out;
-      }
-    </style>
+    <title>website.</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="marquee-container">
-      <div class="marquee-slow">WELCOME TO THE OFFICIAL PORTFOLIO OF SWA</div>
-    </div>
-
-    <center>
-      <h1 class="glacial-text"></h1>
-      <p class="blink">*** AMAZING PROJECTS AHEAD ***</p>
-    </center>
-
-    <div class="background-fader">
-      <h2>ABOUT ME</h2>
-      <p>Businessman, money maker. Professional go getter</p>
-
-      <center>
-        <div class="slow-spinner">
-          <p><b>SWA AT WORK</b><br />(yeah)</p>
+    <div class="site-wrapper">
+      <div class="marquee-container">
+        <div class="marquee-text">welcome. enjoy your stay. x</div>
+      </div>
+      <header>
+        <h1>swa</h1>
+        <p
+          class="blink"
+          style="
+            text-align: center;
+            color: #ff6600;
+            font-weight: bold;
+            font-size: 2rem;
+            letter-spacing: 2px;
+          "
+        >
+          *** WARNING: alpha ahead ***
+        </p>
+      </header>
+      <div class="top-layout-grid">
+        <div class="retro-window">
+          <div class="retro-window-header">
+            <span></span>
+            <div class="window-controls">
+              <div class="window-btn">_</div>
+              <div class="window-btn">□</div>
+              <div class="window-btn">x</div>
+            </div>
+          </div>
+          <div class="retro-window-body about-section">
+            <div class="profile-pic-container">
+              <span class="profile-pic-placeholder">🙂</span>
+            </div>
+            <div class="about-text">
+              <h2>HELLO WORLD!</h2>
+              <p>
+                software engineer, coder, cybersecurity analyst, data scientist,
+                web developer, software developer, database administrator,
+                systems analyst, network engineer, cloud engineer, machine
+                learning engineer, ai engineer, devops engineer, frontend
+                developer, backend developer, full stack developer, mobile app
+                developer, game developer, ux engineer, qa engineer, security
+                engineer, data engineer, computer systems analyst, network
+                administrator, solutions architect, cloud architect, technical
+                support specialist, information security analyst, computer
+                programmer, research scientist
+              </p>
+            </div>
+          </div>
         </div>
-      </center>
+        <div style="display: flex; flex-direction: column; gap: 20px">
+          <div class="retro-window">
+            <div class="retro-window-header">
+              <span></span>
+              <div class="window-controls">
+                <div class="window-btn">_</div>
+                <div class="window-btn">□</div>
+                <div class="window-btn">X</div>
+              </div>
+            </div>
+            <div class="retro-window-body">
+              <div id="music-player" class="music-player">
+                <div class="player-display">
+                  <div class="track-name-container">
+                    <span id="track-name-scroller" class="track-name-scroller">
+                      Currently Streaming: i dont know
+                    </span>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      margin-top: auto;
+                    "
+                  >
+                    <span id="player-time-display" class="player-time"
+                      >00:00</span
+                    >
+                    <div class="equalizer">
+                      <div class="eq-bar"></div>
+                      <div class="eq-bar"></div>
+                      <div class="eq-bar"></div>
+                      <div class="eq-bar"></div>
+                      <div class="eq-bar"></div>
+                      <div class="eq-bar"></div>
+                      <div class="eq-bar"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="player-controls">
+                  <button id="player-play" class="player-btn">PLAY</button>
+                  <button id="player-stop" class="player-btn">STOP</button>
+                  <button id="player-mute" class="player-btn">MUTE</button>
+                </div>
+                <div class="player-volume">
+                  <span>VOL:</span>
+                  <input
+                    type="range"
+                    id="player-volume-slider"
+                    class="volume-slider"
+                    min="0"
+                    max="1"
+                    step="0.05"
+                    value="0.5"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="retro-window">
+            <div class="retro-window-header">
+              <span></span>
+              <div class="window-controls">
+                <div class="window-btn">_</div>
+                <div class="window-btn">□</div>
+                <div class="window-btn">X</div>
+              </div>
+            </div>
+            <div class="retro-window-body">
+              <h2>my art</h2>
+              <p>click to see it bigger</p>
+              <div id="gallery-grid" class="gallery-grid"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main class="gallery-layout-full">
+        <div class="retro-window">
+          <div class="retro-window-header">
+            <span></span>
+            <div class="window-controls">
+              <div class="window-btn">_</div>
+              <div class="window-btn">□</div>
+              <div class="window-btn">X</div>
+            </div>
+          </div>
+          <div class="retro-window-body">
+            <h2>GET IN TOUCH</h2>
+            <p style="text-align: center; margin-bottom: 20px">hi</p>
+            <ul class="socials-list">
+              <li>
+                <a
+                  href="https://github.com/therealswa"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="images/github.png"
+                    class="social-icon"
+                    alt="GitHub"
+                    width="24"
+                    height="24"
+                    style="object-fit: contain"
+                  />
+                  <span>github/therealswa</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://discord.com/users/1456329840054763603"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="images/discord.png"
+                    class="social-icon"
+                    alt="Discord"
+                    width="24"
+                    height="24"
+                    style="object-fit: contain"
+                  />
+                  <span>my discord / swasawaswa </span>
+                </a>
+              </li>
+              <li>
+                <a href="" target="_blank" rel="noopener">
+                  <img
+                    src="images/pictoverse.png"
+                    class="social-icon"
+                    alt="Pictoverse"
+                    width="24"
+                    height="24"
+                    style="object-fit: contain"
+                  />
+                  <span>babaus</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+      <div id="lightbox-modal" class="lightbox-modal">
+        <div class="lightbox-content-wrapper">
+          <div class="retro-window lightbox-window">
+            <div class="retro-window-header lightbox-window-header">
+              <span></span>
+              <div class="window-controls">
+                <button
+                  id="lightbox-close"
+                  class="window-btn"
+                  style="border: 2px outset #00ffff; color: #ff00ff"
+                >
+                  X
+                </button>
+              </div>
+            </div>
+            <div class="retro-window-body lightbox-details-grid">
+              <div class="lightbox-img-container">
+                <img id="lightbox-img" src="" alt="bigger" />
+              </div>
+              <div class="lightbox-info">
+                <div>
+                  <h2 id="lightbox-title-val" class="lightbox-title">
+                    ARTWORK TITLE
+                  </h2>
+                </div>
+                <button
+                  id="lightbox-close-footer"
+                  class="filter-btn"
+                  style="align-self: flex-end; width: 100px"
+                  onclick="document.getElementById('lightbox-modal').click()"
+                >
+                  CLOSE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer style="margin-top: 40px">SWA © 2026</footer>
     </div>
-
-    <hr size="10" color="#00ff00" />
-
-    <h2>MY WORK</h2>
-
-    <table>
-      <tr>
-        <th>PROJECT NAME</th>
-        <th>DESCRIPTION</th>
-      </tr>
-      <tr>
-        <td><b>enshittifier</b></td>
-        <td>android keyboard that turns everything terrible</td>
-      </tr>
-    </table>
-
-    <br /><br />
-
-    <center>
-      <div class="hit-counter">CURRENT DONORS: 0 0 0 0 1 3 3 7</div>
-      <br /><br />
-      <button onclick="alert('hi lol')">click here to work with me!</button>
-    </center>
-
-    <br /><br />
-
-    <footer
-      style="
-        background-color: #ffff00;
-        color: #ff0000;
-        text-align: center;
-        padding: 20px;
-        border-top: 10px dashed #0000ff;
-      "
-    ></footer>
+    <script src="gallery-data.js"></script>
+    <script src="gallery.js"></script>
   </body>
 </html>

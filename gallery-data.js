@@ -1,0 +1,42 @@
+const GALLERY_DATA = [
+  {
+    title: "Misaki Ayuzawa",
+    category: "Illustration",
+    date: "2026",
+    description: "picA",
+    image: "images/art1.png",
+    thumbnail: "images/art1.png",
+  },
+  {
+    title: "Tifa",
+    category: "Illustration",
+    date: "2026",
+    description: "picB",
+    image: "images/art2.webp",
+    thumbnail: "images/art2.webp",
+  },
+  {
+    title: "Tae Takemi",
+    category: "Illustration",
+    date: "2026",
+    description: "picC",
+    image: "images/art3.webp",
+    thumbnail: "images/art3.webp",
+  },
+  {
+    title: "Tung Tung Tung Sahur",
+    category: "Illustration",
+    date: "2026",
+    description: "picD",
+    image: "images/art4.webp",
+    thumbnail: "images/art4.webp",
+  },
+  {
+    title: "Rosalina",
+    category: "drawing",
+    date: "2026",
+    description: "picE",
+    image: "images/art5.webp",
+    thumbnail: "images/art5.webp",
+  },
+];
